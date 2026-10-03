@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Para você, Sena ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         MÚSICA
+    ========================== -->
+
+    <audio id="background-music" preload="auto" loop>
+        <source src="music/Strawberry Guy - Mrs Magic (Strings Version).mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="music-control" class="music-control" aria-label="Pausar música">
+        🎵
+    </button>
+
+
+    <!-- =========================
+         TELA 1 — PRESENTE
+    ========================== -->
+
+    <section id="gift-screen" class="screen active">
+
+        <div class="background-sparkles"></div>
+
+        <div class="gift-content">
+
+            <p class="intro-text">
+                Tenho um presente que fiz para você...
+            </p>
+
+            <div class="gift-wrapper">
+
+                <div class="gift">
+
+                    <div class="gift-lid">
+
+                        <div class="gift-bow">
+                            <span class="bow-left"></span>
+                            <span class="bow-right"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="gift-box">
+
+                        <div class="gift-ribbon-vertical"></div>
+                        <div class="gift-ribbon-horizontal"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button id="open-gift" class="main-button">
+                Abrir presente
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         TELA 2 — ENVELOPE
+    ========================== -->
+
+    <section id="envelope-screen" class="screen hidden">
+
+        <div class="floating-decoration"></div>
+
+        <div class="envelope-content">
+
+            <div class="envelope">
+
+                <div class="envelope-back"></div>
+
+                <div class="envelope-letter">
+                    <div class="letter-preview"></div>
+                </div>
+
+                <div class="envelope-front"></div>
+
+                <div class="envelope-flap"></div>
+
+                <div class="envelope-seal">
+                    ♥
+                </div>
+
+            </div>
+
+            <p class="envelope-text">
+                Para a pessoa que torna meus dias mais felizes...
+            </p>
+
+            <button id="open-letter" class="main-button">
+                Abrir carta 💌
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         TELA 3 — CARTA
+    ========================== -->
+
+    <section id="letter-screen" class="screen hidden">
+
+        <div class="letter-background-decoration decoration-one">
+            ✿
+        </div>
+
+        <div class="letter-background-decoration decoration-two">
+            ✿
+        </div>
+
+        <div class="letter-background-decoration decoration-three">
+            ✧
+        </div>
+
+        <div class="letter-background-decoration decoration-four">
+            ♡
+        </div>
+
+
+        <div class="letter-container">
+
+            <div class="letter-card">
+
+                <div class="letter-flower flower-top-left">
+                    ✿
+                </div>
+
+                <div class="letter-flower flower-top-right">
+                    ✿
+                </div>
+
+                <div class="letter-flower flower-bottom-left">
+                    ✿
+                </div>
+
+                <div class="letter-flower flower-bottom-right">
+                    ✿
+                </div>
+
+
+                <div class="letter-header">
+
+                    <h1>
+                        Para você, Sena...
+                    </h1>
+
+                    <div class="letter-sparkles">
+                        ✦　✧　✦
+                    </div>
+
+                </div>
+
+
+                <div id="letter-content" class="letter-content">
+                </div>
+
+
+                <div id="progress-dots" class="progress-dots">
+
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+
+                </div>
+
+
+                <button id="continue-letter" class="main-button continue-button hidden">
+                    Continuar ❤️
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         TELA 4 — BOLO
+    ========================== -->
+
+    <section id="cake-screen" class="screen hidden">
+
+        <div class="cake-background-sparkles"></div>
+
+        <div class="cake-content">
+
+            <div class="cake">
+
+                <div class="candle candle-one">
+                    <div class="flame"></div>
+                </div>
+
+                <div class="candle candle-two">
+                    <div class="flame"></div>
+                </div>
+
+                <div class="candle candle-three">
+                    <div class="flame"></div>
+                </div>
+
+                <div class="cake-top"></div>
+
+                <div class="cake-middle"></div>
+
+                <div class="cake-bottom"></div>
+
+            </div>
+
+
+            <div class="cake-message">
+
+                <div class="cake-emoji">
+                    🎂
+                </div>
+
+                <h2>
+                    Saiba de uma coisa, meu amor
+                </h2>
+
+                <p>
+                    Clique no bolo 👆
+                </p>
+
+            </div>
+
+
+            <div id="final-message" class="final-message hidden">
+
+                Eu te amo muito e desejo toda felicidade do mundo pra você. ❤️
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
